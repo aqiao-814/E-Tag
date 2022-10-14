@@ -1,6 +1,55 @@
 .title{ 
-    font-family: 'Mukta Vaani', sans-serif;
-    font-size: 8.6875em;
-    color: #000000;
-    margin: 0em;
-  }
+  font-family: 'Mukta Vaani', sans-serif;
+  font-size: 8.6875em;
+  color: #000000;
+  margin-bottom: 0em;
+  margin-left: 0.5em;
+}
+.description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2em;
+  color: #454545;
+  margin-top: 0em;
+  margin-left: 1.6em;
+}
+
+/* nav */
+#main-navbar{
+  background-color: #6b6b6b;
+  overflow: hidden;
+}
+#navbar-container{
+  float: left;
+  width: 100%;
+  position: relative;
+}
+#main-navbar ul{
+  list-style-type: none;
+  margin: 0.6em;
+  padding: 0.6em;
+  position: relative;
+  left: 50%;
+  float: left;
+}
+#main-navbar ul li{
+  float: left;
+  position: relative;
+  right: 50%;
+  display: block; 
+}
+#main-navbar ul li a{
+  display: block;
+  padding: 0.5em 1.25em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 100;
+}
+#main-navbar ul li a:hover{
+  background-color: rgb(93, 93, 93);
+  transform: scale(1.3);
+  transition: all 1s;
+}
+#onpage{
+  text-decoration: underline;
+  font-style: italic;
+}
