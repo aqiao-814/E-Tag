@@ -12,6 +12,18 @@
   margin-top: 0em;
   margin-left: 1.6em;
 }
+.title2 {
+  font-family: 'Mukta Vaani', sans-serif;
+  font-size: 3em;
+  margin-top: 1.3em;
+  margin-left: 1em;
+}
+.bodyAbt {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 1.2em;
+  margin-left: 5%;
+  margin-right: 50%;
+}
 
 /* nav */
 #main-navbar{
