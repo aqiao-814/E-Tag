@@ -10,7 +10,8 @@
   font-size: 2em;
   color: #454545;
   margin-top: 0em;
-  margin-left: 1.6em;
+  margin-left: 5%;
+  margin-right: 50%;
 }
 .title2 {
   font-family: 'Mukta Vaani', sans-serif;
@@ -24,7 +25,13 @@
   margin-left: 5%;
   margin-right: 50%;
 }
-
+.bodyIndex {
+  font-family: 'Hind Vadodara', sans-serif;
+  font-size: 1.8em;
+  margin-top: 200px;
+  margin-left: 5%;
+  margin-right: 50%;
+}
 /* nav */
 #main-navbar{
   background-color: #6b6b6b;
@@ -64,4 +71,14 @@
 #onpage{
   text-decoration: underline;
   font-style: italic;
+}
+/* scroll video */
+#v0 {
+  position: fixed;
+  top: 30%;
+  left: 60%;
+  width: 30%;
+}
+#set-height {
+  display: block;
 }

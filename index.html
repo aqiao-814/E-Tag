@@ -36,4 +36,40 @@
     <h1 class="title">E-Tag</h1>
     <p class="description">E-Tag is a keychain used to share different e-sport player's preformance statistics.</p>
 </header>
+<body>
+    <p class="bodyIndex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet ullamcorper elit vitae interdum. Donec eros orci, dictum id fringilla nec, venenatis ullamcorper ante. Sed vel velit ut lacus iaculis gravida. Quisque elementum ante vel tellus bibendum, vitae bibendum neque aliquet. Sed dignissim vel dolor sodales condimentum. Duis molestie dolor risus, non interdum nisl congue sed. Sed aliquet leo enim, ac pellentesque ipsum dignissim vel. Proin venenatis libero quis sodales tristique.</p>
+    <p class="bodyIndex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet ullamcorper elit vitae interdum. Donec eros orci, dictum id fringilla nec, venenatis ullamcorper ante. Sed vel velit ut lacus iaculis gravida. Quisque elementum ante vel tellus bibendum, vitae bibendum neque aliquet. Sed dignissim vel dolor sodales condimentum. Duis molestie dolor risus, non interdum nisl congue sed. Sed aliquet leo enim, ac pellentesque ipsum dignissim vel. Proin venenatis libero quis sodales tristique.</p>
+    <p class="bodyIndex">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet ullamcorper elit vitae interdum. Donec eros orci, dictum id fringilla nec, venenatis ullamcorper ante. Sed vel velit ut lacus iaculis gravida. Quisque elementum ante vel tellus bibendum, vitae bibendum neque aliquet. Sed dignissim vel dolor sodales condimentum. Duis molestie dolor risus, non interdum nisl congue sed. Sed aliquet leo enim, ac pellentesque ipsum dignissim vel. Proin venenatis libero quis sodales tristique.</p>
+    <div id="set-height"></div>
+    <video id="v0" tabindex="0" autobuffer preload>
+        <source src="/videos/IIT_KEYCHAIN_v1.mp4">
+    </video>
+
+    <script>    
+    var frameNumber = 0, // start video at frame 0
+        // lower numbers = faster playback
+        playbackConst = 200, 
+        // get page height from video duration
+        setHeight = document.getElementById("set-height"), 
+        // select video element         
+        vid = document.getElementById('v0'); 
+        // var vid = $('#v0')[0]; // jquery option
+
+    // dynamically set the page height according to video length
+    vid.addEventListener('loadedmetadata', function() {
+    setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+    });
+
+
+    // Use requestAnimationFrame for smooth playback
+    function scrollPlay(){  
+    var frameNumber  = window.pageYOffset/playbackConst;
+    vid.currentTime  = frameNumber;
+    window.requestAnimationFrame(scrollPlay);
+    }
+
+    window.requestAnimationFrame(scrollPlay);
+    </script>
+
+</body>
 </html>
